@@ -6,6 +6,7 @@ import (
 
 type ClaimSet struct {
 	jws.ClaimSet
+	Hd            string `json:"hd,omitempty"`
 	Email         string `json:"email"`
 	EmailVerified bool   `json:"email_verified"`
 	Name          string `json:"name"`
